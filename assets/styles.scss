@@ -1,0 +1,272 @@
+$spacers: (
+  "xs":    5px,
+  "s":    10px,
+  "m":    25px,
+  "l":    50px,
+  "xl":   100px,
+  "auto":    auto
+);
+
+$widths: (
+  "s":    400px,
+  "m":    620px,
+  "l":    860px
+);
+
+$blue: #4A90E2;
+$red: #F06050;
+$green: #ABD14D;
+
+$radius: 10px;
+$section-space: 50px;
+
+$feature-hero-peekout: 300px;
+
+@each $space, $v in $spacers {
+  //margin
+  .ml-#{$space} { //left
+    margin-left: $v;
+  }
+  .mr-#{$space} { //right
+    margin-right: $v;
+  }
+  .mt-#{$space} { //top
+    margin-top: $v;
+  }
+  .mb-#{$space} { //bottom
+    margin-bottom: $v;
+  }
+  .mx-#{$space} { //x
+    margin-left: $v;
+    margin-right: $v;
+  }
+  .my-#{$space} { //y
+    margin-top: $v;
+    margin-bottom: $v;
+  }
+}
+
+@each $width, $v in $widths {
+  .width-#{$width} {
+    max-width: $v;
+  }
+}
+
+
+
+
+.spring {
+
+  .c-text {
+    text-align: center;
+  }
+
+  .blue {
+    color: $blue;
+  }
+
+  //general styles
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: (28 / 20);
+  }
+
+  .small {
+    font-size: 12px;
+  }
+
+  .button {
+    display: inline-block;
+    background-color: $red;
+    font-size: 26px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: -1.7px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: $radius;
+    transition: all .15s ease-out;
+
+    &:hover {
+      background-color: darken($red,10%);
+      transform: scale(1.3) rotate(1deg);
+    }
+
+  }
+
+  //sections
+  &-section {
+    padding: $section-space 0;
+    position: relative;
+
+    &--features {
+      background-color: $green;
+      margin-top: $feature-hero-peekout;
+    }
+
+     &--end {
+      margin-top: 0;
+      margin-bottom: $feature-hero-peekout;
+    }
+
+  }
+
+ 
+
+  //hero
+  &-hero-wow-and-wonder {
+    position: absolute;
+    top: -115px;
+    right: 0;
+  }
+
+  //features
+  &-features-hero {
+    margin-top: -1 * $feature-hero-peekout;
+  }
+
+  &-features-list {
+    background: url('img/bee-small.png') left 69% no-repeat;
+  }
+
+  //songs 
+  &-songs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &-song {
+    display: flex;
+    align-items: center;
+    flex: 1 0 100%;
+  }
+
+  &-song-playpause {
+    width: 62px;
+    height: 62px;
+    background: url('img/button-stop.svg') center center no-repeat;
+    cursor: pointer;
+    transition: all .15s ease-out;
+    transform: scale(1.2) rotate(-3deg);
+    flex-shrink: 0;
+  }
+
+  &-song-playpause.stopped {
+    background-image: url('img/button-play.svg');
+    transform: none;
+    &:hover {
+      transform: scale(1.2) rotate(-3deg);
+    }
+  }
+
+  &-song-title {
+    color: $red;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1;
+    flex-shrink: 1;
+  }
+
+  &-page-footer {
+    margin-bottom: -1 * $feature-hero-peekout;
+  }
+
+  //wrapper
+  &-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 40px;
+    position: relative;
+  }
+
+}
+
+@media screen and (min-width: 1000px) {
+
+  .spring {
+    &-wrapper {
+      padding: 0;
+    }
+
+    &-song {
+      flex: 1 0 45%;
+      &:nth-child(2n) {
+        transform: translateY(40px);
+      }
+    }
+
+    &-section {
+    padding: $section-space 0;
+    position: relative;
+
+    &--features {
+      background-color: $green;
+      background-image:
+        url('img/features-bg-top.png'),
+        url('img/features-bg-bottom.png'),
+        url('img/bee-with-trail.png');
+      background-position:
+        top left,
+        bottom left,
+        90% 50%;
+      background-repeat: 
+        no-repeat,
+        no-repeat,
+        no-repeat;
+      background-size:
+        100vw $feature-hero-peekout,
+        100vw $feature-hero-peekout,
+        auto;
+      color: white;
+      margin-top: $feature-hero-peekout;
+
+
+    }
+
+     &--end {
+      margin-top: 0;
+      margin-bottom: $feature-hero-peekout;
+      background-image:
+        url('img/features-bg-top.png'),
+        url('img/features-bg-bottom.png');
+      background-position:
+        top left,
+        bottom left;
+      background-repeat: 
+        no-repeat,
+        no-repeat;
+      background-size:
+        100vw $feature-hero-peekout,
+        100vw $feature-hero-peekout;
+    }
+
+  }
+
+  }
+
+
+
+}
+
+//override core css
+@media (min-width: 768px) {
+  main {
+    max-width: none;
+  }
+}
+
+/* embed container from: http://embedresponsively.com/ */
+.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; }
+.embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+audio {
+  display: block !important;
+  border: 1px solid red;
+}
