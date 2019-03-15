@@ -86,7 +86,7 @@ $feature-hero-peekout: 300px;
     font-size: 26px;
     color: white;
     text-transform: uppercase;
-    letter-spacing: -1.7px;
+    letter-spacing: -1px;
     font-weight: bold;
     padding: 12px 24px;
     border-radius: $radius;
@@ -123,6 +123,7 @@ $feature-hero-peekout: 300px;
     position: absolute;
     top: -115px;
     right: 0;
+    max-width: 50% !important;
   }
 
   //features
@@ -165,7 +166,7 @@ $feature-hero-peekout: 300px;
     }
   }
 
-  &-song-title {
+  p.spring-song-title {
     color: $red;
     font-weight: bold;
     margin-top: 0;

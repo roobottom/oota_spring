@@ -150,7 +150,7 @@
   font-size: 26px;
   color: white;
   text-transform: uppercase;
-  letter-spacing: -1.7px;
+  letter-spacing: -1px;
   font-weight: bold;
   padding: 12px 24px;
   border-radius: 10px;
@@ -174,7 +174,8 @@
 .spring-hero-wow-and-wonder {
   position: absolute;
   top: -115px;
-  right: 0; }
+  right: 0;
+  max-width: 50% !important; }
 
 .spring-features-hero {
   margin-top: -300px; }
@@ -223,7 +224,7 @@
     -webkit-transform: scale(1.2) rotate(-3deg);
     transform: scale(1.2) rotate(-3deg); }
 
-.spring-song-title {
+.spring p.spring-song-title {
   color: #F06050;
   font-weight: bold;
   margin-top: 0;
