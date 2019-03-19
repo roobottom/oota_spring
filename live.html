@@ -1,0 +1,522 @@
+<style>
+.ml-xs {
+  margin-left: 5px; }
+
+.mr-xs {
+  margin-right: 5px; }
+
+.mt-xs {
+  margin-top: 5px; }
+
+.mb-xs {
+  margin-bottom: 5px; }
+
+.mx-xs {
+  margin-left: 5px;
+  margin-right: 5px; }
+
+.my-xs {
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+.ml-s {
+  margin-left: 10px; }
+
+.mr-s {
+  margin-right: 10px; }
+
+.mt-s {
+  margin-top: 10px; }
+
+.mb-s {
+  margin-bottom: 10px; }
+
+.mx-s {
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.my-s {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.ml-m {
+  margin-left: 25px; }
+
+.mr-m {
+  margin-right: 25px; }
+
+.mt-m {
+  margin-top: 25px; }
+
+.mb-m {
+  margin-bottom: 25px; }
+
+.mx-m {
+  margin-left: 25px;
+  margin-right: 25px; }
+
+.my-m {
+  margin-top: 25px;
+  margin-bottom: 25px; }
+
+.ml-l {
+  margin-left: 50px; }
+
+.mr-l {
+  margin-right: 50px; }
+
+.mt-l {
+  margin-top: 50px; }
+
+.mb-l {
+  margin-bottom: 50px; }
+
+.mx-l {
+  margin-left: 50px;
+  margin-right: 50px; }
+
+.my-l {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.ml-xl {
+  margin-left: 100px; }
+
+.mr-xl {
+  margin-right: 100px; }
+
+.mt-xl {
+  margin-top: 100px; }
+
+.mb-xl {
+  margin-bottom: 100px; }
+
+.mx-xl {
+  margin-left: 100px;
+  margin-right: 100px; }
+
+.my-xl {
+  margin-top: 100px;
+  margin-bottom: 100px; }
+
+.ml-auto {
+  margin-left: auto; }
+
+.mr-auto {
+  margin-right: auto; }
+
+.mt-auto {
+  margin-top: auto; }
+
+.mb-auto {
+  margin-bottom: auto; }
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto; }
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto; }
+
+.width-s {
+  max-width: 400px; }
+
+.width-m {
+  max-width: 620px; }
+
+.width-l {
+  max-width: 860px; }
+
+.spring .c-text {
+  text-align: center; }
+
+.spring .blue {
+  color: #4A90E2; }
+
+.spring img {
+  display: block;
+  max-width: 100%; }
+
+.spring p {
+  font-size: 20px;
+  line-height: 1.4; }
+
+.spring .small {
+  font-size: 12px; }
+
+.spring .button {
+  display: inline-block;
+  background-color: #F06050;
+  font-size: 26px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 10px;
+  -webkit-transition: all .15s ease-out;
+  transition: all .15s ease-out; }
+  .spring .button:hover {
+    background-color: #ec3521;
+    -webkit-transform: scale(1.3) rotate(1deg);
+    transform: scale(1.3) rotate(1deg); }
+
+.spring-section {
+  padding: 50px 0;
+  position: relative; }
+  .spring-section--features {
+    background-color: #ABD14D;
+    margin-top: 300px; }
+  .spring-section--end {
+    margin-top: 0;
+    margin-bottom: 300px; }
+
+.spring-hero-wow-and-wonder {
+  position: absolute;
+  top: -115px;
+  right: 0;
+  max-width: 50% !important; }
+
+.spring-features-hero {
+  margin-top: -300px; }
+
+.spring-features-list {
+  background: url("//www.outoftheark.co.uk/ext/images/spring-2019/img/bee-small.png") left 69% no-repeat; }
+
+.spring-songs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.spring-song {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 100%;
+  flex: 1 0 100%; }
+
+.spring-song-playpause {
+  width: 62px;
+  height: 62px;
+  background: url("//www.outoftheark.co.uk/ext/images/spring-2019/img/button-stop.png") center center no-repeat;
+  cursor: pointer;
+  -webkit-transition: all .15s ease-out;
+  transition: all .15s ease-out;
+  -webkit-transform: scale(1.2) rotate(-3deg);
+  transform: scale(1.2) rotate(-3deg);
+  -ms-flex-negative: 0;
+  flex-shrink: 0; }
+
+  .spring-song-playpause > span {
+    display: none;
+  }
+
+.spring-song-playpause.stopped {
+  background-image: url("//www.outoftheark.co.uk/ext/images/spring-2019/img/button-play.png");
+  -webkit-transform: none;
+  transform: none; }
+  .spring-song-playpause.stopped:hover {
+    -webkit-transform: scale(1.2) rotate(-3deg);
+    transform: scale(1.2) rotate(-3deg); }
+
+.spring p.spring-song-title {
+  color: #F06050;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1; }
+
+.spring-page-footer {
+  margin-bottom: -300px; }
+
+.spring-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 40px;
+  position: relative; }
+
+@media screen and (min-width: 1000px) {
+  .spring-hero-img {
+    width: 150%;
+  }
+  .spring-wrapper {
+    padding: 0; }
+  .spring-song {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 45%;
+    flex: 1 0 45%; }
+    .spring-song:nth-child(2n) {
+      -webkit-transform: translateY(40px);
+      transform: translateY(40px); }
+  .spring-section {
+    padding: 50px 0;
+    position: relative; }
+    .spring-section--features {
+      background-color: #ABD14D;
+      background-image: url("//www.outoftheark.co.uk/ext/images/spring-2019/img/features-bg-top.png"), url("//www.outoftheark.co.uk/ext/images/spring-2019/img/features-bg-bottom.png"), url("//www.outoftheark.co.uk/ext/images/spring-2019/img/bee-with-trail.png");
+      background-position: top left, bottom left, 90% 50%;
+      background-repeat: no-repeat, no-repeat, no-repeat;
+      background-size: 100vw 300px, 100vw 300px, auto;
+      color: white;
+      margin-top: 300px; }
+    .spring-section--end {
+      margin-top: 0;
+      margin-bottom: 300px;
+      background-image: url("//www.outoftheark.co.uk/ext/images/spring-2019/img/features-bg-top.png"), url("//www.outoftheark.co.uk/ext/images/spring-2019/img/features-bg-bottom.png");
+      background-position: top left, bottom left;
+      background-repeat: no-repeat, no-repeat;
+      background-size: 100vw 300px, 100vw 300px; } }
+
+@media (min-width: 768px) {
+  main {
+    max-width: none; } }
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%; }
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+audio {
+  display: block !important;
+  border: 1px solid red; }
+
+</style>
+
+<div class="spring">
+
+  <section class="spring-section spring-section--hero">
+    <div class="spring-wrapper">
+      <img src="//www.outoftheark.co.uk/ext/images/spring-2019/img/wow-and-wonder.png" class="spring-hero-wow-and-wonder"/>
+      <img src="//www.outoftheark.co.uk/ext/images/spring-2019/img/hero.png" class="mx-auto mb-m spring-hero-img"/>
+      <img src="//www.outoftheark.co.uk/ext/images/spring-2019/img/its-here.png" class="mx-auto mb-m"/>
+      <div class="mx-auto c-text blue">
+        <p>The first in our new highly anticipated assembly series written by the renowned writers of the iconic Songs for EVERY Series, Mark and Helen Johnson.</p>
+        <p>With 13 catchy assembly songs and accompanying assembly plans for celebrating springtime and Easter, Spring Assembly Songs is full of new life, bursting colours, freshness and vitality, with heaps of potential for happy springtime singing.</p>
+      </div>
+      <div class="c-text">
+        <a href="/spring-assembly-songs.html" class="button">Get now!</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="spring-section spring-section--features">
+    <div class="spring-wrapper">
+      <a href="/spring-assembly-songs.html"><img src="//www.outoftheark.co.uk/ext/images/spring-2019/img/features-hero.png" class="mx-auto mb-l spring-features-hero"/></a>
+      <div class="embed-container mb-l width-s">
+        <iframe src='https://www.youtube.com/embed/grD1cvKODM4' frameborder='0' allowfullscreen></iframe>
+      </div>
+      <div class="spring-features-list">
+        <div class="c-text mb-l">
+          <img src="//www.outoftheark.co.uk/ext/images/spring-2019/img/feature-13-songs.png" class="mx-auto mb-m"/>
+          <a href="#songs" class="button">Listen now</a>
+        </div>
+        <div class="c-text mb-l">
+          <img src="//www.outoftheark.co.uk/ext/images/spring-2019/img/feature-assembly-plans.png" class="mx-auto mb-m"/>
+          <a href="#assembly-plans" class="button">View sample</a>
+        </div>
+        <div class="c-text mb-l">
+          <img src="//www.outoftheark.co.uk/ext/images/spring-2019/img/feature-activity.png" class="mx-auto mb-m"/>
+          <a href="#music-activities" class="button">View sample</a>
+        </div>
+        <div class="c-text mb-l">
+          <img src="//www.outoftheark.co.uk/ext/images/spring-2019/img/feature-idea.png" class="mx-auto mb-m"/>
+          <a href="#creative-ideas" class="button">View sample</a>
+        </div>
+        <div class="c-text mb-l">
+          <img src="//www.outoftheark.co.uk/ext/images/spring-2019/img/feature-how-to.png" class="mx-auto mb-m"/>
+          <a href="#how-to-videos" class="button">Watch sample</a>
+        </div>
+        <div class="c-text mb-l">
+          <img src="//www.outoftheark.co.uk/ext/images/spring-2019/img/feature-bsl.png" class="mx-auto mb-m"/>
+          <a href="#signing-videos" class="button">View</a>
+        </div>
+      </div>
+      <p class="small c-text">*Available with Premium Pack Purchases only</p>
+    </div>
+
+  </section>
+
+  <!-- SONGS go in the following section -->
+
+  <section class="spring-section spring-section--songs">
+    <div class="spring-wrapper" id="songs">
+      <img src="//www.outoftheark.co.uk/ext/images/spring-2019/img/title-songs.png" title="Songs" alt="Songs" class="mb-l"/>
+      <div class="spring-songs">
+        
+        <div class="spring-song mb-m">
+          <div class="spring-song-playpause stopped"><span>Play / pause</span></div>
+          <p class="spring-song-title ml-s">We're Making Pancakes</p>
+          <audio class="spring-song-audio one" src="//www.outoftheark.co.uk/ext/images/spring-2019/mp3s/WereMakingPancakes.mp3" preload="auto"></audio>
+        </div>
+
+        <div class="spring-song mb-m">
+          <div class="spring-song-playpause stopped"><span>Play / pause</span></div>
+          <p class="spring-song-title ml-s">Goodbye Winter, Hello Spring</p>
+          <audio class="spring-song-audio two" src="//www.outoftheark.co.uk/ext/images/spring-2019/mp3s/GoodbyeWinterHelloSpring.mp3" preload="auto"></audio>
+        </div>
+
+        <div class="spring-song mb-m">
+          <div class="spring-song-playpause stopped"><span>Play / pause</span></div>
+          <p class="spring-song-title ml-s">A Perfect Day in Spring</p>
+          <audio class="spring-song-audio two" src="//www.outoftheark.co.uk/ext/images/spring-2019/mp3s/APerfectDayInSpring.mp3" preload="auto"></audio>
+        </div>
+
+        <div class="spring-song mb-m">
+          <div class="spring-song-playpause stopped"><span>Play / pause</span></div>
+          <p class="spring-song-title ml-s">Songbird</p>
+          <audio class="spring-song-audio two" src="//www.outoftheark.co.uk/ext/images/spring-2019/mp3s/Songbird.mp3" preload="auto"></audio>
+        </div>
+
+        <div class="spring-song mb-m">
+          <div class="spring-song-playpause stopped"><span>Play / pause</span></div>
+          <p class="spring-song-title ml-s">Caterpillar Munch</p>
+          <audio class="spring-song-audio two" src="//www.outoftheark.co.uk/ext/images/spring-2019/mp3s/CaterpillarMunch.mp3" preload="auto"></audio>
+        </div>
+
+        <div class="spring-song mb-m">
+          <div class="spring-song-playpause stopped"><span>Play / pause</span></div>
+          <p class="spring-song-title ml-s">The Seed Song</p>
+          <audio class="spring-song-audio two" src="//www.outoftheark.co.uk/ext/images/spring-2019/mp3s/TheSeedSong.mp3" preload="auto"></audio>
+        </div>
+
+        <div class="spring-song mb-m">
+          <div class="spring-song-playpause stopped"><span>Play / pause</span></div>
+          <p class="spring-song-title ml-s">It's a Spring Thing</p>
+          <audio class="spring-song-audio two" src="//www.outoftheark.co.uk/ext/images/spring-2019/mp3s/ItsASpringThing.mp3" preload="auto"></audio>
+        </div>
+
+        <div class="spring-song mb-m">
+          <div class="spring-song-playpause stopped"><span>Play / pause</span></div>
+          <p class="spring-song-title ml-s">The Tadpole Song</p>
+          <audio class="spring-song-audio two" src="//www.outoftheark.co.uk/ext/images/spring-2019/mp3s/TheTadpoleSong.mp3" preload="auto"></audio>
+        </div>
+
+        <div class="spring-song mb-m">
+          <div class="spring-song-playpause stopped"><span>Play / pause</span></div>
+          <p class="spring-song-title ml-s">As the sun rises</p>
+          <audio class="spring-song-audio two" src="//www.outoftheark.co.uk/ext/images/spring-2019/mp3s/AsTheSunRises.mp3" preload="auto"></audio>
+        </div>
+
+        <div class="spring-song mb-m">
+          <div class="spring-song-playpause stopped"><span>Play / pause</span></div>
+          <p class="spring-song-title ml-s">Sing Yourself a Happy Song</p>
+          <audio class="spring-song-audio two" src="//www.outoftheark.co.uk/ext/images/spring-2019/mp3s/SingYourselfAHappySong.mp3" preload="auto"></audio>
+        </div>
+
+        <div class="spring-song mb-m">
+          <div class="spring-song-playpause stopped"><span>Play / pause</span></div>
+          <p class="spring-song-title ml-s">You're the Best Mum for Me</p>
+          <audio class="spring-song-audio two" src="//www.outoftheark.co.uk/ext/images/spring-2019/mp3s/ItsAGoodTimeToTellYou.mp3" preload="auto"></audio>
+        </div>
+
+        <div class="spring-song mb-m">
+          <div class="spring-song-playpause stopped"><span>Play / pause</span></div>
+          <p class="spring-song-title ml-s">Ring out the bells<br/><span class="small">(We're coming Alive)</span></p>
+          <audio class="spring-song-audio two" src="//www.outoftheark.co.uk/ext/images/spring-2019/mp3s/RingOutTheBells.mp3" preload="auto"></audio>
+        </div>
+
+        <div class="spring-song mb-m">
+          <div class="spring-song-playpause stopped"><span>Play / pause</span></div>
+          <p class="spring-song-title ml-s">He is Risen<br/><span class="small">(Easter Blessing)</span></p>
+          <audio class="spring-song-audio two" src="//www.outoftheark.co.uk/ext/images/spring-2019/mp3s/HeIsRisenEasterBlessing.mp3" preload="auto"></audio>
+        </div>
+
+        
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="spring-section spring-section--features spring-section--end">
+    <div class="spring-wrapper">
+      <img src="//www.outoftheark.co.uk/ext/images/spring-2019/img/quote.png" alt="A joyful, spirited and optimistic collection of songs that inject bounce into the term and are supported by assembly plans and creative activities. This is an assembly resource that is full of life, energy and hope. -- John Dabell, Teach Primary Magazine" class="mx-auto my-l"/>
+
+      <div class="mb-xl" id="assembly-plans">
+        <img src="//www.outoftheark.co.uk/ext/images/spring-2019/img/title-assembly-plans.png" alt="Assembly Plans" class="mb-m"/>
+        <img src="//www.outoftheark.co.uk/ext/images/spring-2019/img/example-assembly-plan.jpg"/>
+      </div>
+
+      <div class="mb-xl" id="music-activities">
+        <img src="//www.outoftheark.co.uk/ext/images/spring-2019/img/title-music-activities.png" alt="Music Activities" class="mb-m"/>
+        <img src="//www.outoftheark.co.uk/ext/images/spring-2019/img/example-activity.jpg"/>
+      </div>
+
+      <div class="mb-xl" id="creative-ideas">
+        <img src="//www.outoftheark.co.uk/ext/images/spring-2019/img/title-creative-ideas.png" alt="Creative Ideas" class="mb-m"/>
+        <img src="//www.outoftheark.co.uk/ext/images/spring-2019/img/example-creative-idea.jpg"/>
+      </div>
+
+      <div class="mb-xl" id="how-to-videos">
+        <img src="//www.outoftheark.co.uk/ext/images/spring-2019/img/title-how-to-videos.png" alt="How To Videos" class="mb-m"/>
+        <div class="embed-container">
+          <iframe src='https://www.youtube.com/embed/W_yibge0vqg' frameborder='0' allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="mb-xl" id="signing-videos">
+        <img src="//www.outoftheark.co.uk/ext/images/spring-2019/img/title-signing-videos.png" alt="Signing Videos" class="mb-m"/>
+        <div class="embed-container">
+          <iframe src='https://www.youtube.com/embed/sKAD6bo4brI' frameborder='0' allowfullscreen></iframe>
+        </div>
+      </div>
+
+
+
+      <a href="/spring-assembly-songs.html"><img src="//www.outoftheark.co.uk/ext/images/spring-2019/img/page-footer.png" class="spring-page-footer mx-auto"/></a>
+    </div>
+  </section>
+
+
+</div>
+<script>
+$(document).ready(function () {
+  //audio players
+  $('.spring-song').each(function() {
+    var $audioFile = $('.spring-song-audio', this);
+    var $button = $('.spring-song-playpause', this);
+
+    $button.click(function () {
+      if($(this).hasClass('stopped')) 
+      {
+        //pause all playing audio
+        $('.spring-song-audio').trigger('pause');
+        $('.spring-song-playpause').addClass('stopped');
+        //now play this track
+        $(this).removeClass('stopped');
+        $audioFile.trigger('play');
+      }
+      else
+      {
+        $(this).addClass('stopped');
+        $audioFile.trigger('pause');
+      } 
+      
+    });
+
+  });
+});
+</script>
